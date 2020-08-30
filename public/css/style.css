@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
 }
 
 section {
@@ -14,7 +15,7 @@ section {
 .banner {
   position: relative;
   min-height: 100vh;
-  background: url("../img/banner.jpg");
+  background-color: #f8c249;
   background-size: cover;
   background-position: right;
   display: flex;
@@ -24,7 +25,7 @@ section {
 
 .banner h2 {
   font-size: 3em;
-  color: #fff;
+  color: #111;
   font-weight: 500;
   line-height: 1.5em;
 }
@@ -36,22 +37,24 @@ section {
 
 .banner h3 {
   font-size: 1.5em;
-  color: #fff;
+  color: #111;
   font-weight: 500;
 }
 
 .btn {
   position: relative;
-  background: #2196f3;
   display: inline-block;
-  color: #fff;
+  color: #111;
   margin-top: 20px;
   padding: 10px 30px;
-  font-size: 18px;
+  font-size: 14px;
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 2px;
   font-weight: 500;
+  border: 2px solid #111;
+  border-radius: 10px;
+  background-color: #e7a924;
 }
 
 header {
@@ -68,13 +71,13 @@ header {
 }
 
 header.sticky {
-  background: #fff;
+  background: #111;
   padding: 20px 100px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
 }
 
 header .logo {
-  color: #fff;
+  color: #111;
   font-size: 24px;
   text-transform: uppercase;
   text-decoration: none;
@@ -83,7 +86,7 @@ header .logo {
 }
 
 header.sticky .logo {
-  color: #111;
+  color: #f8c249;
 }
 
 header ul {
@@ -100,19 +103,19 @@ header ul li a {
   position: relative;
   display: inline-block;
   margin: 0 15px;
-  color: #fff;
+  color: #111;
   text-decoration: none;
 }
 
 header.sticky ul li a {
-  color: #111;
+  color: #f8c249;
 }
 
 .heading {
   width: 100%;
   text-align: center;
   margin-bottom: 30px;
-  color: #111;
+  color: #f8c249;
 }
 
 .heading h2 {
@@ -131,11 +134,24 @@ header.sticky ul li a {
 
 .contentBx h3 {
   font-size: 24px;
-  margin-bottom: ;
+  color: #f8c249;
+  margin-bottom: 20px;
+}
+
+.about {
+  background: #111;
 }
 
 .w50 {
   min-width: 50%;
+  color: #f8c249;
+}
+
+.w50 img {
+  max-width: 50%;
+  border-radius: 100%;
+  display: block;
+  margin: auto;
 }
 
 img {
@@ -143,11 +159,11 @@ img {
 }
 
 .services {
-  background: #111;
+  background: #f8c249;
 }
 
 .heading.white {
-  color: #fff;
+  color: #111;
 }
 
 .services .content {
@@ -181,6 +197,10 @@ img {
   font-weight: 600;
 }
 
+.work {
+  background: #f8c249;
+}
+
 .work .content {
   display: flex;
   justify-content: space-between;
@@ -194,6 +214,7 @@ img {
 
 .work .content .workBx img {
   max-width: 100%;
+  box-shadow: 10px 10px 5px rgba(12, 11, 11, 0.5);
 }
 
 .contact {
@@ -229,4 +250,8 @@ img {
 
 .contactInfoBx p {
   padding-top: 20px;
+}
+
+.contactInfoBx:hover {
+  background: rgba(248, 194, 73, 0.7);
 }
